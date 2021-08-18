@@ -1,0 +1,16 @@
+{
+    "id": "1987845",
+    "name": "3DTool",
+    "font_family": "iconfont",
+    "css_prefix_text": "icon-",
+    "description": "",
+    "glyphs": [
+        {
+            "icon_id": "11910220",
+            "name": "坐标轴",
+            "font_class": "coordinate-axis",
+            "unicode": "e7ab",
+            "unicode_decimal": 59307
+        }
+    ]
+}

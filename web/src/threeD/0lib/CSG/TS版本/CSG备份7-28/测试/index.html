@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="vision.js"></script>
+    <script src="test.js"></script>
+</head>
+<body oncontextmenu="return false" onselectstart="return false"
+      style="width: 100%; height: 100%; margin: 0; padding: 0; overflow: hidden;">
+<div id="view">
+    <canvas id="canvas"></canvas>
+</div>
+<script>
+    const canvas = document.getElementById('canvas');
+
+    const engine = new VISION.WebGLEngine(canvas, {
+        fullScreen: true,
+        limitDeviceRatio: 1.0
+    });
+
+    const scene = new VISION.Scene(engine);
+    const camera = new VISION.PerspectiveCamera(scene);
+
+    engine.runRenderLoop(() => {
+        scene.render()
+    });
+
+    const see = toGeometryTest()
+    debugger
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+#
+## Alias OBJ Material File
+# Exported from SketchUp, (c) 2000-2012 Trimble Navigation Limited
+
+newmtl Resin_Blue
+Ka 0.000000 0.000000 0.000000
+Kd 0.670588 0.823529 0.945098
+Ks 0.330000 0.330000 0.330000
+map_Kd 总成/Resin_Blue.jpg
+
+newmtl Color_B08
+Ka 0.000000 0.000000 0.000000
+Kd 0.400000 0.098039 0.000000
+Ks 0.330000 0.330000 0.330000
+
+newmtl Color_B05
+Ka 0.000000 0.000000 0.000000
+Kd 1.000000 0.247059 0.000000
+Ks 0.330000 0.330000 0.330000
+
+newmtl Concrete_Form_4x8
+Ka 0.000000 0.000000 0.000000
+Kd 0.654902 0.666667 0.658824
+Ks 0.330000 0.330000 0.330000
+map_Kd 总成/Concrete_Form_4x8.jpg
+
+newmtl Translucent_Glass_Blue
+Ka 0.000000 0.000000 0.000000
+Kd 0.392157 0.584314 0.929412
+Ks 0.330000 0.330000 0.330000
+d 0.500000
+

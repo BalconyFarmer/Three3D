@@ -1,0 +1,17 @@
+
+node_modules
+web/dist/*
+#server/static/*
+transferFolder
+
+.iml
+.xml
+.idea
+
+#忽略Runtime文件夹下的文件
+
+# 3D模型文件
+# model3D
+
+# 用户上传图片
+# projects

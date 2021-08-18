@@ -1,0 +1,27 @@
+#
+## Alias OBJ Material File
+# Exported from SketchUp, (c) 2000-2012 Trimble Navigation Limited
+
+newmtl FrontColor
+Ka 0.000000 0.000000 0.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.330000 0.330000 0.330000
+
+newmtl Concrete_Flooring_I01_2m
+Ka 0.000000 0.000000 0.000000
+Kd 0.513725 0.525490 0.517647
+Ks 0.330000 0.330000 0.330000
+map_Kd 无标题/Concrete_Flooring_I01_2m.jpg
+
+newmtl Concrete_Ceiling_K01_2m
+Ka 0.000000 0.000000 0.000000
+Kd 0.525490 0.525490 0.501961
+Ks 0.330000 0.330000 0.330000
+map_Kd 无标题/Concrete_Ceiling_K01_2m.jpg
+
+newmtl Glass_Coated_Blue
+Ka 0.000000 0.000000 0.000000
+Kd 0.000000 0.000000 0.000000
+Ks 0.330000 0.330000 0.330000
+d 0.351206
+

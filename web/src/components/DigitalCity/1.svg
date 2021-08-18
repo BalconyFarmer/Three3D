@@ -1,0 +1,45 @@
+<svg id="组_618" data-name="组 618" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="54" height="262.906" viewBox="0 0 54 262.906">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #3f9ed2;
+        stroke-width: 2px;
+      }
+
+      .cls-1 {
+        opacity: 0.62;
+      }
+
+      .cls-2 {
+        opacity: 0.3;
+        filter: url(#filter);
+      }
+
+      .cls-3 {
+        filter: url(#filter-2);
+      }
+    </style>
+    <filter id="filter" x="1" y="1" width="52" height="260.906" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#52b5e7"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-2" x="4.063" y="4" width="45.781" height="254.312" filterUnits="userSpaceOnUse">
+      <feGaussianBlur result="blur" stdDeviation="6" in="SourceAlpha"/>
+      <feFlood result="flood" flood-color="#53b4e8" flood-opacity="0.42"/>
+      <feComposite result="composite-2" operator="out" in2="blur"/>
+      <feComposite result="composite" operator="in" in2="SourceAlpha"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <rect id="圆角矩形_1_拷贝" data-name="圆角矩形 1 拷贝" class="cls-1" x="4.063" y="4" width="45.781" height="254.312" rx="22.888" ry="22.888"/>
+  <g style="fill: none; filter: url(#filter)">
+    <rect id="圆角矩形_2" data-name="圆角矩形 2" class="cls-2" x="1" y="1" width="52" height="260.906" rx="26" ry="26" style="stroke: inherit; filter: none; fill: inherit"/>
+  </g>
+  <use xlink:href="#圆角矩形_2" style="stroke: #3f9ed2; filter: none; fill: none"/>
+  <rect id="圆角矩形_1_拷贝_2" data-name="圆角矩形 1 拷贝 2" class="cls-3" x="4.063" y="4" width="45.781" height="254.312" rx="22.888" ry="22.888"/>
+</svg>
