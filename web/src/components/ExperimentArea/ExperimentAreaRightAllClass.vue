@@ -73,7 +73,7 @@
 <script>
 import * as THREE from "three";
 import {serverAdress} from '@/config';
-import Canvas from "../Canvas/Canvas";
+import Canvas from "./Canvas/Canvas";
 
 export default {
     components: {

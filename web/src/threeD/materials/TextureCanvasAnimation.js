@@ -1,5 +1,5 @@
 import * as THREE from "three";
-import {App2D} from '../../components/Canvas/App2D'
+import {App2D} from '../../components/ExperimentArea/Canvas/App2D'
 
 export class TextureCanvasAnimation {
     constructor(app) {
