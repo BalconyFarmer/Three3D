@@ -136,30 +136,3 @@ export function getOBJList(formData) {
     })
 }
 
-/**
- * cookie测试
- */
-/*export function setCookie() {
-    this.$cookies.set('testName', '1221', '60s')
-    this.$axios({
-        method: "get",
-        url: serverAdress + '/reciveCookie',
-        data: {name: 'name'},
-        withCredentials: true
-    })
-        .then(response => {
-        })
-        .catch(error => console.log(error, "error"));
-}
-export function removeCookie() {
-    this.$cookies.set('testName', '11', '1s')
-    this.$axios({
-        method: "get",
-        url: serverAdress + '/setMyCookie',
-        data: {name: 'name'},
-        withCredentials: true
-    })
-        .then(response => {
-        })
-        .catch(error => console.log(error, "error"));
-}*/
