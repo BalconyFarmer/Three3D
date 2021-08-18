@@ -22,13 +22,11 @@
 </template>
 
 <script>
-import LoginRegist from './LoginRegist'
 import {loadHeadIconApi} from '@/api/api'
 
 export default {
     name: 'HomePage',
     components: {
-        LoginRegist,
     },
     data() {
         return {
