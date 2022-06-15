@@ -1,5 +1,5 @@
 import * as THREE from "three";
-import Stats from 'Stats'
+// import Stats from 'Stats'
 import {SpritCanvas} from './representationalviewer/SpritCanvas'
 import {CubeMesh} from "./representationalviewer/CubeMesh";
 import {FaceNormalsHelper} from 'three/examples/jsm/helpers/FaceNormalsHelper'
@@ -12,9 +12,9 @@ import {VertexNormalsHelper} from 'three/examples/jsm/helpers/VertexNormalsHelpe
 export class Helper {
     constructor(app) {
         this.app = app
-        this.stats = new Stats();
+        // this.stats = new Stats();
         this.statsDom = null
-        this.stats.setMode(1); // 0: fps, 1: ms
+        // this.stats.setMode(1); // 0: fps, 1: ms
         this.gridHelper = null
         this.axes = null
         this.axesMarksList = []
@@ -30,31 +30,31 @@ export class Helper {
      * 性能检测辅助器
      */
     addStats() {
-        document.body.appendChild(this.stats.domElement)
-        this.stats.domElement.style.position = 'absolute'
-        this.stats.domElement.style.left = '0px'
-        this.stats.domElement.style.top = document.body.clientHeight - 50 + 'px'
-
-        const self = this
-        this.app.renderQueue.push(
-            function updateStats() {
-                if (self.stats) {
-                    self.stats.update();
-                }
-            }
-        )
+        // document.body.appendChild(this.stats.domElement)
+        // this.stats.domElement.style.position = 'absolute'
+        // this.stats.domElement.style.left = '0px'
+        // this.stats.domElement.style.top = document.body.clientHeight - 50 + 'px'
+        //
+        // const self = this
+        // this.app.renderQueue.push(
+        //     function updateStats() {
+        //         if (self.stats) {
+        //             self.stats.update();
+        //         }
+        //     }
+        // )
     }
 
     removeStats() {
-        document.body.removeChild(this.stats.domElement)
-
-        let indexDelete = NaN
-        this.app.renderQueue.forEach((item, index) => {
-            if (item.name === 'updateStats') {
-                indexDelete = index
-            }
-        })
-        this.app.renderQueue.splice(indexDelete, 1)
+        // document.body.removeChild(this.stats.domElement)
+        //
+        // let indexDelete = NaN
+        // this.app.renderQueue.forEach((item, index) => {
+        //     if (item.name === 'updateStats') {
+        //         indexDelete = index
+        //     }
+        // })
+        // this.app.renderQueue.splice(indexDelete, 1)
     }
 
     /**
