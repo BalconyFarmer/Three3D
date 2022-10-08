@@ -14,6 +14,10 @@
                         DigitalCity
                     </a-menu-item>
 
+                    <a-menu-item key="mail6" @click="go3dMenu">
+                        <a-icon type="appstore"/>
+                        3dMenu
+                    </a-menu-item>
                 </a-menu>
             </div>
         </div>
@@ -26,8 +30,7 @@ import {loadHeadIconApi} from '@/api/api'
 
 export default {
     name: 'HomePage',
-    components: {
-    },
+    components: {},
     data() {
         return {
             userInf: this.$store.state.userInf,
@@ -37,8 +40,7 @@ export default {
             current: ['mail'],
         }
     },
-    computed: {
-    },
+    computed: {},
     methods: {
         routeTo(route) {
             this.$router.push({path: '/' + route}).catch(error => error)
@@ -111,7 +113,9 @@ export default {
         goDigitalCity() {
             this.$router.push({path: '/goDigitalCity'}).catch(error => error)
         },
-
+        go3dMenu() {
+            this.$router.push({path: '/go3dMenu'}).catch(error => error)
+        },
         goVideo() {
             this.$router.push({path: '/goVideo'}).catch(error => error)
         },

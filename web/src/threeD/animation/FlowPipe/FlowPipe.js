@@ -27,7 +27,7 @@ export class FlowPipe {
         const geometry = new THREE.TubeGeometry(CurvePath, 100, this.redius, 25, false);
 
         let textureLoader = new THREE.TextureLoader();
-        this.texture = textureLoader.load(serverAdress + '/3Dstatic/model3D/run.jpg');
+        this.texture = textureLoader.load(serverAdress + '/3Dstatic/model3D/run.png');
         this.texture.wrapS = THREE.RepeatWrapping
         this.texture.wrapT = THREE.RepeatWrapping
         // this.texture.rotation = Math.PI / 2;
@@ -47,9 +47,9 @@ export class FlowPipe {
             function () {
                 if (self.texture) {
                     if (self.direction) {
-                        self.texture.offset.x += 0.06
+                        self.texture.offset.x += 0.01
                     } else {
-                        self.texture.offset.x -= 0.06
+                        self.texture.offset.x -= 0.01
                     }
                 }
             }
