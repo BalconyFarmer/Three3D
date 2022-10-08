@@ -18,6 +18,11 @@
                         <a-icon type="appstore"/>
                         3dMenu
                     </a-menu-item>
+
+                    <a-menu-item key="mail6" @click="go3dMenu1">
+                        <a-icon type="appstore"/>
+                        3dMenu1
+                    </a-menu-item>
                 </a-menu>
             </div>
         </div>
@@ -115,6 +120,10 @@ export default {
         },
         go3dMenu() {
             this.$router.push({path: '/go3dMenu'}).catch(error => error)
+        },
+        go3dMenu1() {
+            this.$router.push({path: '/go3dMenu1'}).catch(error => error)
+
         },
         goVideo() {
             this.$router.push({path: '/goVideo'}).catch(error => error)

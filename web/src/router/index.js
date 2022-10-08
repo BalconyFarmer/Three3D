@@ -4,6 +4,7 @@ import HomePage from '@/components/HomePage'
 import ExperimentArea from "../components/ExperimentArea/ExperimentArea";
 import DigitalCity from "../components/DigitalCity/DigitalCity";
 import MenuD3 from "../components/Menu3d/MenuD3";
+import MenuD31 from "../components/Menu3d2/Menu3d2"
 
 Vue.use(Router)
 
@@ -17,6 +18,7 @@ const router = new Router({
                 {path: 'goDigitalCity', component: DigitalCity},
                 {path: 'experimentArea', component: ExperimentArea, children: []},
                 {path: 'go3dMenu', component: MenuD3, children: []},
+                {path: 'go3dMenu1', component: MenuD31, children: []},
             ]
         }
     ],
