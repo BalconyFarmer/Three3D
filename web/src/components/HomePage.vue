@@ -19,7 +19,7 @@
                         3dMenu
                     </a-menu-item>
 
-                    <a-menu-item key="mail6" @click="go3dMenu1">
+                    <a-menu-item key="mail7" @click="go3dMenu1">
                         <a-icon type="appstore"/>
                         3dMenu1
                     </a-menu-item>
