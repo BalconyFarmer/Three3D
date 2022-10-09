@@ -2,7 +2,7 @@ import * as THREE from "three";
 // import Stats from 'Stats'
 import {SpritCanvas} from './representationalviewer/SpritCanvas'
 import {CubeMesh} from "./representationalviewer/CubeMesh";
-import {FaceNormalsHelper} from 'three/examples/jsm/helpers/FaceNormalsHelper'
+// import {FaceNormalsHelper} from 'three/examples/jsm/helpers/FaceNormalsHelper.js' // 文档说移除了
 import {VertexNormalsHelper} from 'three/examples/jsm/helpers/VertexNormalsHelper'
 
 /**
@@ -289,9 +289,9 @@ export class Helper {
         const geometry = new THREE.BoxGeometry(10, 10, 10, 2, 2, 2);
         const material = new THREE.MeshLambertMaterial({color: 0xff0000});
         const box = new THREE.Mesh(geometry, material);
-        const helper = new FaceNormalsHelper(box, 2, 0x00ff00, 1);
-        this.app.scene.add(box);
-        this.app.scene.add(helper);
+        // const helper = new FaceNormalsHelper(box, 2, 0x00ff00, 1);
+        // this.app.scene.add(box);
+        // this.app.scene.add(helper);
     }
 
     addVertexNormalsHelper() {

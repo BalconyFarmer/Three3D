@@ -12,7 +12,6 @@ import {FlowPipes} from '@/threeD/animation/FlowPipe/FlowPipes'
 import {Helper} from '@/threeD/helpers/Helper'
 import {Controls} from '@/threeD/sceneBasic/Controls'
 import {ExportImport} from '@/threeD/loaders/ExportImport'
-import {BSPCalculate} from '@/threeD/basicMath/BSPCalculate'
 import {Car} from '@/threeD/PROJECTS/game/Car'
 import {PhysiSimulate} from '@/threeD/PROJECTS/game/PhysiSimulate'
 
@@ -124,7 +123,6 @@ export default class App3D {
         this.JudgeFace3 = new JudgeFace3(this)
         this.flowPipes = new FlowPipes(this)
         this.eventCube = new EventCube(this)
-        this.bSPCalculate = new BSPCalculate(this)
         this.car = new Car(this)
         this.physiSimulate = new PhysiSimulate(this)
         this.makeMeshPoint = new MakeMeshPoint(this)

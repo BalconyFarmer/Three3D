@@ -21,15 +21,15 @@ export class MakeGeometryMesh {
     }
 
     makeGeometry() {
-        /**
+/*        /!**
          * 创建网格模型
-         */
+         *!/
         this.geometry = new THREE.Geometry(); //声明一个几何体对象Geometry
         const p1 = new THREE.Vector3(50, 0, 0); //顶点1坐标
         const p2 = new THREE.Vector3(0, 70, 0); //顶点2坐标
         const p3 = new THREE.Vector3(80, 70, 0); //顶点3坐标
         //顶点坐标添加到geometry对象
-        this.geometry.vertices.push(p1, p2, p3);
+        this.geometry.vertices.push(p1, p2, p3);*/
     }
 
     makeGeometryMesh() {
@@ -52,7 +52,7 @@ export class MakeGeometryMesh {
     }
 
     makeGeometryFace() {
-        const geometry = new THREE.Geometry(); //声明一个几何体对象Geometry
+/*        const geometry = new THREE.Geometry(); //声明一个几何体对象Geometry
 
         const p1 = new THREE.Vector3(0, 0, 0); //顶点1坐标
         const p2 = new THREE.Vector3(0, 100, 0); //顶点2坐标
@@ -86,7 +86,7 @@ export class MakeGeometryMesh {
 
         //网格模型对象
         const mesh = new THREE.Mesh(geometry, material);
-        this.app.scene.add(mesh)
+        this.app.scene.add(mesh)*/
     }
 
     addToScene() {

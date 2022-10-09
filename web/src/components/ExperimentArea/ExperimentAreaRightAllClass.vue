@@ -113,7 +113,7 @@ export default {
             this.app3D.helper.addCameraHelper()
         },
         startTestBSP() {
-            this.app3D.bSPCalculate.startTestBSP()
+            // this.app3D.bSPCalculate.startTestBSP()
 
         },
         addPolarGridHelper() {
