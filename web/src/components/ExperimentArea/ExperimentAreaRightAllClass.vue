@@ -6,6 +6,7 @@
         <a @click="addLightStrick">闪电</a>
         <a @click="bloomOnly">bloomOnly</a>
         <a @click="addCloud">云</a>
+        <a @click="addGrass">草坪</a>
         <a @click="addBackgroundImg">背景图片</a>
         <a @click="addBackgroundBox">背景包围盒</a>
         <a @click="startPersonalControl">开启第一人称</a>
@@ -241,6 +242,9 @@ export default {
             let P2 = [0, 37, 6]
             let size2 = 15
             this.app3D.cloud.addCloud(P2, size2)
+        },
+        addGrass() {
+            this.app3D.grass.add()
         },
         addBackgroundBox() {
             this.app3D.skyBox.addSkyBox()
