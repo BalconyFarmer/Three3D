@@ -39,6 +39,7 @@ import {SkyBox} from './sceneBasic/SkyBox'
 import {WaterPlane} from './materials/WaterPlane'
 import {LightningStrike} from './LightningStrike'
 import {BloomOnly} from "./Bloom/BloomOnly";
+import {UnrealBloomPassMy} from "./Bloom/UnrealBloomPass";
 
 
 export default class App3D {
