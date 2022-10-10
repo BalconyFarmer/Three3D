@@ -5,6 +5,7 @@
         </strong>
         <a @click="addLightStrick">闪电</a>
         <a @click="bloomOnly">bloomOnly</a>
+        <a @click="addCloud">云</a>
         <a @click="addBackgroundImg">背景图片</a>
         <a @click="addBackgroundBox">背景包围盒</a>
         <a @click="startPersonalControl">开启第一人称</a>
@@ -65,7 +66,7 @@
 
         <strong>其他</strong>
         <a @click="dialogVisible = true">canvas</a>
-        <el-dialog title="canvas绘图" :visible.sync="dialogVisible" width="90%" height="80%" >
+        <el-dialog title="canvas绘图" :visible.sync="dialogVisible" width="90%" height="80%">
             <Canvas class="canvasComponents"></Canvas>
         </el-dialog>
 
@@ -232,6 +233,15 @@ export default {
         bloomOnly() {
             this.app3D.bloomOnly.bloom()
         },
+        addCloud() {
+            let P1 = [10, 20, -21]
+            let size1 = 10
+            this.app3D.cloud.addCloud(P1, size1)
+
+            let P2 = [0, 37, 6]
+            let size2 = 15
+            this.app3D.cloud.addCloud(P2, size2)
+        },
         addBackgroundBox() {
             this.app3D.skyBox.addSkyBox()
 
@@ -259,9 +269,11 @@ export default {
     width: 100%;
     height: 100%;
 }
+
 .el-dialog__body {
     height: 500px !important;
 }
+
 #rightToolClassSub {
     display: inline;
     float: left;

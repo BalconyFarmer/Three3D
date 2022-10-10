@@ -40,7 +40,7 @@ import {WaterPlane} from './materials/WaterPlane'
 import {LightningStrike} from './LightningStrike'
 import {BloomOnly} from "./Bloom/BloomOnly";
 import {UnrealBloomPassMy} from "./Bloom/UnrealBloomPass";
-
+import {Cloud} from "./Cloud";
 
 export default class App3D {
 
@@ -148,6 +148,7 @@ export default class App3D {
         this.waterPlane = new WaterPlane(this)
         this.lightningStrike = new LightningStrike(this)
         this.bloomOnly = new BloomOnly(this)
+        this.cloud = new Cloud(this)
         this.startLoop()
 
     }
