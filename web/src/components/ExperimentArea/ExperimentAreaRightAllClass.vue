@@ -3,6 +3,8 @@
         <strong>
             环境相关
         </strong>
+        <a @click="addLightStrick">闪电</a>
+        <a @click="bloomOnly">bloomOnly</a>
         <a @click="addBackgroundImg">背景图片</a>
         <a @click="addBackgroundBox">背景包围盒</a>
         <a @click="startPersonalControl">开启第一人称</a>
@@ -223,6 +225,12 @@ export default {
         },
         addBackgroundImg() {
             this.app3D.skyBox.addJpgBackground()
+        },
+        addLightStrick() {
+            this.app3D.lightningStrike.add()
+        },
+        bloomOnly() {
+            this.app3D.bloomOnly.bloom()
         },
         addBackgroundBox() {
             this.app3D.skyBox.addSkyBox()

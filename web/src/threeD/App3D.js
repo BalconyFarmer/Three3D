@@ -1,10 +1,8 @@
 import * as THREE from "three";
 
 import {SceneCamera} from './sceneBasic/SceneCamera'
-
 import {RaycasterHelper} from "@/threeD/interaction/RaycasterHelper";
 import {ImportObjs} from "@/threeD/loaders/ImportObjs";
-
 import {ImportFBX} from '@/threeD/animation/ImportFBX'
 import {EventCube} from '@/threeD/interaction/EventCube'
 import {JudgeFace3} from '@/threeD/basicMath/JudgeFace3'
@@ -14,7 +12,6 @@ import {Controls} from '@/threeD/sceneBasic/Controls'
 import {ExportImport} from '@/threeD/loaders/ExportImport'
 import {Car} from '@/threeD/PROJECTS/game/Car'
 import {PhysiSimulate} from '@/threeD/PROJECTS/game/PhysiSimulate'
-
 import {MakeBufferGeometryMesh} from './basicMesh/MakeBufferGeometryMesh'
 import {MakeBufferGeometryCube} from './basicMesh/MakeBufferGeometryCube'
 import {MakeGeometryMesh} from './basicMesh/MakeGeometryMesh'
@@ -24,7 +21,6 @@ import {TransformMesh} from './interaction/TransformMesh'
 import {TakePoint} from './interaction/TakePoint'
 import {Animation} from './animation/Animation'
 import {Sound} from './interaction/Sound'
-
 import {ArrowLine} from './helpers/representationalviewer/ArrowLine'
 import {Matrix4Practice} from './basicMath/Matrix4Practice'
 import {EulerPractice} from './basicMath/EulerPractice'
@@ -32,18 +28,18 @@ import {QuaternionPractice} from './basicMath/QuaternionPractice'
 import {OutlineShineEffect} from './interaction/OutlineShineEffect'
 import {PlayVideo} from './materials/PlayVideo'
 import {TextureCanvasAnimation} from './materials/TextureCanvasAnimation'
-
 import {BasicMaterials} from '@/threeD/materials/BasicMaterials'
-
 import {OfflineRender} from './undefinedNow/OfflineRender'
 import {GUIApp} from './GUI/GUIApp'
-
 import {ShadowLight} from './undefinedNow/ShadowLight'
 import {LittleWindow} from './helpers/representationalviewer/LittleWindow'
 import {MultipleElements} from './undefinedNow/MultipleElements'
 import {AdvancedMaterial} from './materials/AdvancedMaterial'
 import {SkyBox} from './sceneBasic/SkyBox'
 import {WaterPlane} from './materials/WaterPlane'
+import {LightningStrike} from './LightningStrike'
+import {BloomOnly} from "./Bloom/BloomOnly";
+
 
 export default class App3D {
 
@@ -149,7 +145,8 @@ export default class App3D {
         this.advancedMaterial = new AdvancedMaterial(this)
         this.skyBox = new SkyBox(this)
         this.waterPlane = new WaterPlane(this)
-
+        this.lightningStrike = new LightningStrike(this)
+        this.bloomOnly = new BloomOnly(this)
         this.startLoop()
 
     }
