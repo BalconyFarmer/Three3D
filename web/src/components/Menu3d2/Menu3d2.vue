@@ -53,12 +53,13 @@ export default {
     background: url("./imgs/baseMap.png") center no-repeat;
     background-size: 40% 40%;
     background-position: center 55%;
+    background-color: #252526;
 }
 
 .top {
     position: absolute;
-    right: 751px;
-    top: 338px;
+    left: calc(50vw - 110px);
+    top: 370px;
     width: calc(342px / 1.5);
     height: calc(318px / 1.5);
     background-image: url("./imgs/baseLogo.png");

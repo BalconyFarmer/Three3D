@@ -1,6 +1,6 @@
 <template>
     <div class="all_3DMenu">
-        <canvas width="2000px" height="1000px" style="z-index: 99999; border: 1px solid yellow"
+        <canvas width="2000px" height="1000px" style="z-index: 99999;"
                 id="D3Container"></canvas>
     </div>
 </template>
@@ -39,12 +39,13 @@ export default {
 
 <style scoped>
 .all_3DMenu {
-    margin-top: 10%;
+    margin-top: 1%;
     width: 100%;
-    height: 70%;
+    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    background-color: #252526;
 }
 </style>
