@@ -1,6 +1,6 @@
 <template>
     <div class="all_3DMenu">
-        <canvas width="2000px" height="1000px" style="z-index: 99999; border: 1px solid yellow"
+        <canvas width="2000" height="1000" style="z-index: 99999; border: 1px solid yellow"
                 id="D3Container"></canvas>
 
         <div class="top"></div>
