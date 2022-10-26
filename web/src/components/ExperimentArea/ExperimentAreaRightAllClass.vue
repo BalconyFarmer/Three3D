@@ -28,6 +28,7 @@
             动态物质
         </strong>
         <a @click="addAnimationTest">动画小车</a>
+        <a @click="addSkimmer">加载蛋分</a>
         <a @click="startAnimatioinEditor">开启动画编辑器</a>
         <a @click="stopAnimationEditor">关闭动画编辑器</a>
         <a @click="addFlowPipe">流动管道flowPipe</a>
@@ -108,6 +109,10 @@ export default {
             const times = [0, 5, 10]
             const positions = [-164, 87, -0.9, -71, 87, 6.9, -71, 87, 109]
             this.app3D.animation.start(mesh, times, positions)
+        },
+        addSkimmer() {
+            const mesh = serverAdress + '/3Dstatic/model3D/蛋分/SimLab_2022-10-20-15-40-52.obj'
+            this.app3D.objLoaders.loadOBJ(mesh,"蛋分")
         },
         addGUITest() {
             this.app3D.GUI3D.start()
